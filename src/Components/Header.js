@@ -1,0 +1,20 @@
+import React from 'react';
+import '../Styles/Header.scss';
+import logo from '../assets/user_pic.png';
+import HeaderLeftSide from './HeaderLeftSide';
+import HeaderCenterSearchArea from './HeaderCenterSearchArea';
+import HeaderRightSide from './HeaderRightSide';
+
+const Header=()=> {
+  return (
+    <div className='HeaderSection'>
+      <header>
+        <HeaderLeftSide/>
+        <HeaderCenterSearchArea/>
+        <HeaderRightSide logo={logo}/>
+      </header>
+      </div>
+  );
+}
+
+export default Header;
